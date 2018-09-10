@@ -1,0 +1,34 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.bg { 
+    /* The image used */
+    background-image: url(../images/city.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-brand {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.introText h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10vw;
+}
+
+.introText p {
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 3vw;
+}
