@@ -2,13 +2,17 @@ const express = require('express');
 
 const linksRouter = express.Router();
 
-linksRouter.route('/')
-  .get((req, res) => {
-    res.render(
-      'links',
-      {
-        title: 'HouseRank'
-      }
-    );
-  });
-module.exports = linksRouter;
+function router() {
+  linksRouter.route('/')
+    .get((req, res) => {
+      res.render(
+        'links',
+        {
+          title: 'HouseRank'
+        }
+      );
+    });
+
+  return linksRouter;
+}
+module.exports = router();
