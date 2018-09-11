@@ -14,9 +14,26 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use('/css', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css')));
 app.use('/js', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/js')));
 app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
 
+// Retrieving Routes
+const rankHouseRouter = require('./src/routes/rankHouseRoutes');
+const viewRankingRouter = require('./src/routes/viewRankingRoutes');
+const linksRouter = require('./src/routes/linksRoutes');
+// use Routers
+app.use('/rankHouse', rankHouseRouter);
+app.use('/viewRank', viewRankingRouter);
+app.use('/links', linksRouter);
+
+// index router
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views/index.html'));
+  res.render(
+    'index',
+    {
+      title: 'HouseRank'
+    }
+  );
 });
 
 app.listen(port, () => {
