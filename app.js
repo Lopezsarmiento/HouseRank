@@ -14,6 +14,11 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use('/css', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css')));
 app.use('/js', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/js')));
 app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
+// angular
+app.use('/js', express.static(path.join(__dirname, '/node_modules/angular')));
+// controllers
+app.use('/ng', express.static(path.join(__dirname, '/src/components/home')));
+
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
@@ -28,12 +33,7 @@ app.use('/links', linksRouter);
 
 // index router
 app.get('/', (req, res) => {
-  res.render(
-    'index',
-    {
-      title: 'HouseRank'
-    }
-  );
+  res.sendFile(path.join(__dirname, '/src/views/index.html'));
 });
 
 app.listen(port, () => {
