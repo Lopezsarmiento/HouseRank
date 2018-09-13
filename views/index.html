@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 
 <head>
 	<!-- Required meta tags -->
@@ -10,21 +10,31 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- load angular-->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif+JP:300|Permanent+Marker" rel="stylesheet">
 
 
-	<title>index.html</title>
+	<title>Welcome to HouseRank</title>
 </head>
 
 <body class="bg">
+	<div ng-view>
 
+	</div>
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="home/homeController.js"></script>
+		<script src="links/linksController.js"></script>
+		<script src="rankHouse/rankHouseController.js"></script>
+		<script src="viewRanking/viewRankingController.js"></script>
+		<script src="ng/ngRouter.js"></script>
 </body>
 
 </html>

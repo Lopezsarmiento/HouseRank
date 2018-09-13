@@ -16,8 +16,14 @@ app.use('/js', express.static(path.join(__dirname, '/node_modules/bootstrap/dist
 app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
 // angular
 app.use('/js', express.static(path.join(__dirname, '/node_modules/angular')));
+// angular-route
+app.use('/js', express.static(path.join(__dirname, '/node_modules/angular-route')));
 // controllers
-app.use('/ng', express.static(path.join(__dirname, '/src/components/home')));
+app.use('/home', express.static(path.join(__dirname, '/src/components/home')));
+app.use('/rankHouse', express.static(path.join(__dirname, '/src/components/rankHouse')));
+app.use('/viewRanking', express.static(path.join(__dirname, '/src/components/viewRanking')));
+app.use('/links', express.static(path.join(__dirname, '/src/components/links')));
+
 
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
@@ -27,13 +33,13 @@ const rankHouseRouter = require('./src/routes/rankHouseRoutes');
 const viewRankingRouter = require('./src/routes/viewRankingRoutes');
 const linksRouter = require('./src/routes/linksRoutes');
 // use Routers
-app.use('/rankHouse', rankHouseRouter);
-app.use('/viewRank', viewRankingRouter);
-app.use('/links', linksRouter);
+// app.use('/rankHouse', rankHouseRouter);
+// app.use('/viewRank', viewRankingRouter);
+// app.use('/links', linksRouter);
 
 // index router
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/src/views/index.html'));
+  res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 
 app.listen(port, () => {

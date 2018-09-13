@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- load angular-->
 	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif+JP:300|Permanent+Marker" rel="stylesheet">
 
@@ -20,7 +21,9 @@
 </head>
 
 <body class="bg">
+	<div ng-view>
 
+	</div>
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -28,6 +31,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="ng/homeController.js"></script>
+		<script src="ng/ngRouter.js"></script>
 </body>
 
 </html>
