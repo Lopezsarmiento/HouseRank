@@ -4,6 +4,11 @@ body, html {
     box-sizing: border-box;
 }
 
+.full-screen {
+    position: absolute;
+    height: 100%;
+}
+
 .bg { 
     /* The image used */
     background-image: url(../images/city.jpg);
@@ -24,11 +29,14 @@ body, html {
 .introText h1 {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 8vw;
+    font-size: 7.5vw;
 }
 
 .introText p {
     color: white;
     font-family: 'Noto Serif JP', sans-serif;
-    font-size: 3vw;
+    font-size: 3.5vw;
+}
+.active {
+    border-bottom: 1px solid #3385ff !important;
 }
