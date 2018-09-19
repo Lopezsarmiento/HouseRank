@@ -38,5 +38,9 @@ body, html {
     font-size: 3.5vw;
 }
 .active {
-    border-bottom: 1px solid #3385ff !important;
+    border-bottom: 3px solid #ffc107 !important;
+}
+
+li {
+    border-radius: 7px;
 }
