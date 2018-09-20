@@ -2,7 +2,7 @@
 	<header class="masthead mb-auto">
 		<div class="inner">
 			<nav class="navbar navbar-expand-sm navbar-light bg-faded">
-				<a href="#/!" class="navbar-brand">cover</a>
+				<a href="#/!" class="navbar-brand">HouseRank</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar5">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -26,24 +26,71 @@
 		</div>
 	</header>
 
-	<main role="main" class="introText">
-		<div class="row">
-			<div class="col-sm introText">
-				<h1>Hola!<br>Bienvenido a HouseRank</h1>
-				<p>El lugar donde tu opinion cuenta.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm">
-				<a class="btn btn-md btn-warning" href="#!rankHouse">Rank a House</a>
-				<a class="btn btn-md btn-info" href="#!viewRank">Ver Ranking</a>
+	<main role="main" class="introText" id="form">
+		<div class="container">
+			<div class="row step">
+				<div class="col">
+					<form>
+						<div class="row">
+							<div class="col-sm-12 col-md-6">
+								<div class="form-group">
+									<label>Cuantos años viviste en el inmueble?</label>
+									<select class="custom-select">
+										<option></option>
+										<option value="1">0 a 1</option>
+										<option value="2">1 a 2</option>
+										<option value="3">2 a 4</option>
+										<option value="3">4 o mas</option>
+									</select>
+								</div>
+								<fieldset class="form-group">
+									<div class="row">
+										<legend class="col-form-label col-sm-2 pt-0">Alquilaste con:</legend>
+										<div class="col-sm-10">
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+												<label class="form-check-label" for="gridRadios1">
+													Inmobiliaria
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+												<label class="form-check-label" for="gridRadios2">
+													Dueño directo
+												</label>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<div class="col-sm-12 col-md-6">
+								<div class="form-group">
+									<label>Selecciona la inmobiliaria?</label>
+									<select class="custom-select">
+										<option></option>
+										<option value="1">Cakita prop</option>
+										<option value="2">Tecobromas SA</option>
+										<option value="3">Somos Rochos propiedades</option>
+										<option value="3">Lta finca raiz</option>
+										<option value="3">Otro</option>
+									</select>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-12">
+										<button type="submit" class="btn btn-warning float-right">Siguiente paso</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</main>
-
+	<hr>
 	<footer class="mastfoot mt-auto">
 		<div class="inner">
-			<p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+
 		</div>
 	</footer>
 </div>

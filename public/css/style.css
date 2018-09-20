@@ -44,3 +44,10 @@ body, html {
 li {
     border-radius: 7px;
 }
+
+.step {
+    padding-top: 3%;
+    background: inherit;
+    border-radius: 10px;
+    box-shadow: inset -200px -200px 0px 200px rgb(224, 235, 235, 0.8);
+}
