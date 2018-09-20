@@ -15,7 +15,10 @@
             })
             .when("/links", {
                 templateUrl: "links/links.html"
-            });
+            })
+            .when("/test", {
+                templateUrl: "test/test.html"
+            })
     });
 
 })();

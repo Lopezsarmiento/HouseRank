@@ -38,5 +38,16 @@ body, html {
     font-size: 3.5vw;
 }
 .active {
-    border-bottom: 1px solid #3385ff !important;
+    border-bottom: 3px solid #ffc107 !important;
+}
+
+li {
+    border-radius: 7px;
+}
+
+.step {
+    padding-top: 3%;
+    background: inherit;
+    border-radius: 10px;
+    box-shadow: inset -200px -200px 0px 200px rgb(224, 235, 235, 0.8);
 }
