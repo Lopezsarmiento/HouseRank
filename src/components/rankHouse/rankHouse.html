@@ -1,49 +1,80 @@
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-        <div class="inner">
-            <nav class="navbar navbar-expand-sm navbar-light bg-faded">
-                <a href="#/!" class="navbar-brand">HouseRank</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar5">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse justify-content-lg-end" id="navbar5">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#!rankHouse">Rank a House</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!viewRank">View House ranking</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!links">Useful links</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!test">test</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
+	<header class="masthead mb-auto">
+		<div class="inner">
+			<nav class="navbar navbar-expand-sm navbar-light bg-faded">
+				<a href="#/!" class="navbar-brand">HouseRank</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar5">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse justify-content-lg-end" id="navbar5">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#!rankHouse">Rank a House</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!viewRank">View House ranking</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!links">Useful links</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!test">test</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-    <main role="main" class="introText">
-        <div class="row">
-            <div class="col-sm introText">
-                <h1>Rank the house</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <a class="btn btn-md btn-warning" href="#!rankHouse">Rank a House</a>
-                <a class="btn btn-md btn-info" href="#!viewRank">Ver Ranking</a>
-            </div>
-        </div>
-    </main>
+	<main role="main" class="introText">
+		<div class="row">
+			<div class="col-sm-8 offset-sm-2 introText">
+				<h1>PASO 1</h1>
+				<h4>Ingresa los datos del lugar</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 offset-sm-2">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-6">
+							<label for="inputState">Provincia</label>
+							<select id="inputState" class="form-control">
+								<option selected>Selecciona...</option>
+								<option>Ciudad Autonoma de Buenos Aires</option>
+								<option>Buenos Aires</option>
+								<option>Santa Fé</option>
+								<option>Cordoba</option>
+							</select>
+						</div>
+						<div class="form-group col-6">
+							<label for="inputCity">Ciudad</label>
+							<input type="text" class="form-control" id="inputCity" placeholder="Ej: Capital Federal">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-6">
+							<label for="inputAddress">Calle y Altura</label>
+							<input type="text" class="form-control" id="inputAddress" placeholder="Ej: Av coronel diaz 3966">
+						</div>
+						<div class="form-group col-3">
+							<label for="inputAddress2">Piso</label>
+							<input type="text" class="form-control" id="inputAddress2" placeholder="Ej: 4">
+						</div>
+						<div class="form-group col-3">
+							<label for="inputAddress2">Depto</label>
+							<input type="text" class="form-control" id="inputAddress2" placeholder="Ej: 4 / C">
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Sign in</button>
+				</form>
+			</div>
+		</div>
+	</main>
 
-    <footer class="mastfoot mt-auto">
-        <div class="inner">
+	<footer class="mastfoot mt-auto">
+		<div class="inner">
 
-        </div>
-    </footer>
+		</div>
+	</footer>
 </div>
