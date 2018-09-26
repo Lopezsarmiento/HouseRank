@@ -1,34 +1,39 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang='en' ng-app='myApp'>
 
 <head>
 	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel='stylesheet' href='css/bootstrap.min.css'>
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel='stylesheet' href='css/style.css'>
 	<!-- load angular-->
-	<script src="js/angular.min.js"></script>
-	<script src="js/angular-route.min.js"></script>
+	<script src='js/angular.min.js'></script>
+	<script src='js/angular-route.min.js'></script>
+
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif+JP:300|Permanent+Marker" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif+JP:300|Permanent+Marker' rel='stylesheet'>
 
 
 	<title>Welcome to HouseRank</title>
 </head>
 
-<body class="bg" ng-view>
+<body class='bg' ng-view>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/myApp.js"></script>
+	<script src='js/jquery.slim.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBGYE7JGaD364siumtVZF2odhHR7P937AY&libraries=places&callback=initAutocomplete' async defer></script>
+	<script src='js/bootstrap.min.js'></script>
+	<script src='js/myApp.js'></script>
+	<script src='home/homeController.js'></script>
+	<script src='rankHouse/rankhouseController.js'></script>
+	<script src='viewRanking/viewrankingController.js'></script>
 </body>
 
 </html>
