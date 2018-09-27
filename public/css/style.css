@@ -45,6 +45,9 @@ li {
     border-radius: 7px;
 }
 
+.mb-auto {
+    margin-bottom: 10% !important;
+}
 .step {
 
     /* Full height */

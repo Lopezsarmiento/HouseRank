@@ -2,7 +2,7 @@
 	<header class='masthead mb-auto'>
 		<div class='inner'>
 			<nav class='navbar navbar-expand-sm navbar-light bg-faded'>
-				<a href='/#!home' class='navbar-brand'>{{ name }}</a>
+				<a href='#!home' class='navbar-brand'>{{ vm.name }}</a>
 				<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbar5'>
 					<span class='navbar-toggler-icon'></span>
 				</button>
@@ -16,9 +16,6 @@
 						</li>
 						<li class='nav-item'>
 							<a class='nav-link' href='#!links'>Useful links</a>
-						</li>
-						<li class='nav-item'>
-							<a class='nav-link' href='#!test'>test</a>
 						</li>
 					</ul>
 				</div>
@@ -36,38 +33,31 @@
 		<div class='row'>
 			<div class='col'>
 				<form>
-					<div class='form-row'>
-						<div class='form-group col-6'>
-							<label for='inputState'>Provincia</label>
-							<select id='inputState' class='form-control'>
-								<option selected>Selecciona...</option>
-								<option>Ciudad Autonoma de Buenos Aires</option>
-								<option>Buenos Aires</option>
-								<option>Santa Fé</option>
-								<option>Cordoba</option>
-							</select>
-						</div>
-						<div class='form-group col-6'>
-							<label for='inputCity'>Ciudad</label>
-							<input type='text' class='form-control' id='inputCity' placeholder='Ej: Capital Federal'>
+					<div class="form-row">
+						<div class='form-group col-12'>
+							<label for='inputAddress'>
+								<h6>Calle y Altura</h6>
+							</label>
+							<input type='text' class='form-control' id='inputAddress' ng-model='vm.address' placeholder="Ej: Av cordoba 4400">
+							<h1>{{ vm.address }}</h1>
 						</div>
 					</div>
 					<div class='form-row'>
 						<div class='form-group col-6'>
-							<label for='inputAddress'>Calle y Altura</label>
-							<input type='text' class='form-control' id='inputAddress' ng-model='address.direccion'>
-							<h1>{{ address.address}}</h1>
+							<label for='inputAddress2'>
+								<h6>Piso</h6>
+							</label>
+							<input type='text' class='form-control' id='inputAddress2' placeholder='Ej: Pb / 4'>
 						</div>
-						<div class='form-group col-3'>
-							<label for='inputAddress2'>Piso</label>
-							<input type='text' class='form-control' id='inputAddress2' placeholder='Ej: 4'>
-						</div>
-						<div class='form-group col-3'>
-							<label for='inputAddress2'>Depto</label>
+						<div class='form-group col-6'>
+							<label for='inputAddress2'>
+									<h6>Depto</h6>
+							</label>
 							<input type='text' class='form-control' id='inputAddress2' placeholder='Ej: 4 / C'>
 						</div>
 					</div>
-					<button type='submit' class='btn btn-primary'>Sign in</button>
+					<a class="btn btn-md btn-warning" href="#!home">atras</a>
+          <a class="btn btn-md btn-info" href="#!steptwo">Siguiente</a>
 				</form>
 			</div>
 		</div>

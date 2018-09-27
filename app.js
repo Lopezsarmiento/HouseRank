@@ -23,7 +23,7 @@ app.use('/home', express.static(path.join(__dirname, '/src/components/home')));
 app.use('/rankHouse', express.static(path.join(__dirname, '/src/components/rankHouse')));
 app.use('/viewRanking', express.static(path.join(__dirname, '/src/components/viewRanking')));
 app.use('/links', express.static(path.join(__dirname, '/src/components/links')));
-app.use('/test', express.static(path.join(__dirname, '/src/components/test')));
+app.use('/steptwo', express.static(path.join(__dirname, '/src/components/steptwo')));
 
 
 app.set('views', './src/views');
